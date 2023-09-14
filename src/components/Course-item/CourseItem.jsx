@@ -3,7 +3,7 @@ import { BsBook } from 'react-icons/bs';
 import { FiDollarSign } from 'react-icons/fi';
 
 
-const CourseItem = ({course}) => {
+const CourseItem = ({course, handleSelect}) => {
   return (
         <div className="bg-white rounded-xl p-3">
             <div className='flex justify-center'><img className='w-full' src={course.image} alt="Shoes" /></div>
@@ -15,7 +15,7 @@ const CourseItem = ({course}) => {
                 <div className='flex items-center gap-2'><FiDollarSign className='text-black text-xl' /> <p>$Price: {course.price}</p></div>
                 <div className='flex items-center gap-2'><BsBook className='text-black text-xl' /> <p>Credit: {course.Credit}</p></div>
             </div>
-            <button className='w-full mt-3 py-2 rounded-md bg-[#2F80ED] text-white font-semibold'>Select</button>
+            <button onClick={() => handleSelect(course)} className='w-full mt-3 py-2 rounded-md bg-[#2F80ED] text-white font-semibold'>Select</button>
         </div>
   )
 }
