@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "title": "Learn Python courses",
+      "image": "https://i.ibb.co/Zxqdfbc/Rectangle-2.png",
+      "description": "Python is a general-purpose programming language that’s powerful yet easy to read, making it a great first language to learn. From web development to machine learning to data science — Python can do it all.",
+      "price": 90,
+      "Credit": 5
+    },
+    {
+      "id": 2,
+      "title": "Introduction to C++",
+      "image": "https://i.ibb.co/7pTPrQj/Rectangle-2-4.png",
+      "description": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
+      "price": 120,
+      "Credit": 3
+    },
+    {
+      "id": 3,
+      "title": "Learn to C Programming",
+      "image": "https://i.ibb.co/x6N1T23/Rectangle-2-2.png",
+      "description": "The C programming language was first released in 1972, making it one of the oldest still used today. All modern operating systems are implemented with C code, which means that the C language powers almost every technological experience we have. Python’s interpreter is also written in C. Get started learning C fundamentals to become a better programmer in any field of computer science.",
+      "price": 49.99,
+      "Credit": 4
+    },
+    {
+      "id": 4,
+      "title": "MySQL Beginner to Expert",
+      "image": "https://i.ibb.co/WKdnrVG/Rectangle-2-1.png",
+      "description": "This course was just completely redone and rebuilt from the ground up, with over 325 brand new videos recorded. The course now uses MySQL 8.x and covers new topics including: Window Functions, Views, and SQL modes. If you want to learn how to gain insights from data but are too intimidated by databases to know where to start, then this course is for you. This course is a gentle but comprehensive introduction to MySQL, one of the most highly in-demand skills in the business sector today.",
+      "price": 89,
+      "Credit": 2
+    },
+    {
+      "id": 5,
+      "title": "Learn problem solving",
+      "image": "https://i.ibb.co/FmbLDzZ/Rectangle-2-6.png",
+      "description": "Problem Solving is included in a larger course on problem-solving and decision-making strategy as an introductory part, and here is presented as a stand-alone course for those interested in learning about the problem-solving topics. The course contains more than 2 hours of video lectures, written lectures; and one final quiz. The lectures include examples and exercises, and your active participation will improve information retention and learning quality",
+      "price": 110,
+      "Credit": 6
+    },
+    {
+      "id": 6,
+      "title": "Algorithms Specialization",
+      "image": "https://i.ibb.co/LdGgCKX/Rectangle-2-3.png",
+      "description": "Algorithms are the heart of computer science, and the subject has countless practical applications as well as intellectual depth.  This specialization is an introduction to algorithms for learners with at least a little programming experience.  The specialization is rigorous but emphasizes the big picture and conceptual understanding over low-level implementation and mathematical details.  After completing this specialization, you will be well-positioned to ace your technical interviews and speak fluently about algorithms with other programmers and computer scientists.",
+      "price": 99,
+      "Credit": 4
+    },
+    {
+      "id": 7,
+      "title": "Learn software engineering",
+      "image": "https://i.ibb.co/Bg7MTyH/Rectangle-2-5.png",
+      "description": "If you’re interested in using your technical skills to solve real-world problems, then a career in software engineering may be for you. Learn the basics of the profession with online software engineering courses delivered through edX.",
+      "price": 130,
+      "Credit": 5
+    },
+    {
+      "id": 8,
+      "title": "Data Structures",
+      "image": "https://i.ibb.co/zrShWVD/Rectangle-3.png",
+      "description": "Master Algorithmic Programming Techniques. Advance your Software Engineering or Data Science Career by Learning Algorithms through Programming and Puzzle Solving. Ace coding interviews by implementing each algorithmic challenge in this Specialization. Apply the newly-learned algorithmic techniques to real-life problems, such as analyzing a huge social network or sequencing a genome of a deadly pathogen.",
+      "price": 49,
+      "Credit": 9
+    },
+    {
+      "id": 9,
+      "title": "AWS, Cloud Computing",
+      "image": "https://i.ibb.co/0Gfy3fz/Rectangle-3-1.png",
+      "description": "For organizations looking to unlock the full value of their AWS services, we equip teams with practical cloud skills that increase cloud ROI and accelerate business results. From on-demand digital courses, labs, and game-based learning to interactive classroom training, our experts can help you design a comprehensive training plan.",
+      "price": 89,
+      "Credit": 1
+    }
+  ]
+  
