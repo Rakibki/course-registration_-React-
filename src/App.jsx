@@ -12,6 +12,7 @@ const App = () => {
   const [selectedCourseItems, setSelectedCourseItem] = useState([])
   const [totolCredit, setTotalCredit] = useState(0)
   const [totalPrice, setTotalPrice] = useState(0)
+  const [creditRemaining, setCreditRemaining] = useState(20)
 
   useEffect(() => {
     fetch('data.json')
@@ -24,28 +25,34 @@ const App = () => {
     const exist = selectedCourseItems.find((course) => course.id === item.id);
     if(exist) {
         return toast.warn("you have already selected this course")
+    } else {
+      if(totolCredit <= 20) {
+        setCreditRemaining(creditRemaining-item.Credit)
+        if(creditRemaining < item.Credit) {
+          return toast.warn("your dont have enough credit hour")
+        }
+
+        let creditTemp = item.Credit;
+        selectedCourseItems.forEach((item) => creditTemp = creditTemp + item.Credit);
+        setTotalCredit(creditTemp)
+
+        let priceTemp = item.price;
+        selectedCourseItems.forEach((item) => priceTemp = priceTemp + item.price)
+        setTotalPrice(priceTemp)
+
+        setSelectedCourseItem([...selectedCourseItems, item])
+
+      }
     }
-    
-    let creditTemp = item.Credit;
-    selectedCourseItems.forEach((item) => creditTemp = creditTemp + item.Credit);
-    setTotalCredit(creditTemp)
-
-    setSelectedCourseItem([...selectedCourseItems, item])
-    
-
-    let priceTemp = item.price;
-    selectedCourseItems.forEach((item) => priceTemp = priceTemp + item.price)
-    setTotalPrice(priceTemp)
-
-
   }
+
 
   return (
     <div>
       <Navber />
       <div className='md:flex gap-2 lg:flex px-8 md:px-6 lg:px-14'>
           <CourseContainer handleSelect={handleSelect} course={course} />
-          <SelectedCourse totalPrice={totalPrice} totolCredit={totolCredit} selectedCourseItems={selectedCourseItems} />
+          <SelectedCourse creditRemaining={creditRemaining} totalPrice={totalPrice} totolCredit={totolCredit} selectedCourseItems={selectedCourseItems} />
       </div>
       <div>
         <ToastContainer position="top-center"

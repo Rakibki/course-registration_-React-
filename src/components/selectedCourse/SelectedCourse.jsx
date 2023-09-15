@@ -1,10 +1,10 @@
 import React from 'react'
 
-const SelectedCourse = ({selectedCourseItems, totalPrice, totolCredit}) => {
+const SelectedCourse = ({selectedCourseItems, creditRemaining, totalPrice, totolCredit}) => {
   return (
     <div className='lg:w-1/4 md:w-1/4'>
       <div className='bg-white overflow-hidden px-6  rounded-xl'>
-          <h1 className='mt-6 mb-4 text-[18px] font-semibold text-center text-[#2F80ED]'>Credit Hour Remaining 7 hr</h1>
+          <h1 className='mt-6 mb-4 text-[18px] font-semibold text-center text-[#2F80ED]'>Credit Hour Remaining {creditRemaining} hr</h1>
           <hr />
           <h1 className='text-xl font-bold my-3'>Course Name</h1>
           <ol className='px-4'>
