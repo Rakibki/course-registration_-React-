@@ -1,8 +1,7 @@
-# React + Vite
+1. - The three features of this project are
+     => The new course can be added to the card. Can't be added twice
+     => The total credit hours of the card can be seen
+     => Can't add to card if total exceeds 20 credits
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. - question: Discuss how you managed the state in your assignment project.
+     ans: All the data in the course is in the app component state, then it has been sent to the course container component, then it has been mapped and displayed and now it has been done.

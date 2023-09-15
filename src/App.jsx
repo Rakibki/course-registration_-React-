@@ -25,11 +25,15 @@ const App = () => {
     const exist = selectedCourseItems.find((course) => course.id === item.id);
     if(exist) {
         return toast.warn("you have already selected this course")
-    } else {
+    }
       if(totolCredit <= 20) {
-        setCreditRemaining(creditRemaining-item.Credit)
+        
         if(creditRemaining < item.Credit) {
           return toast.warn("your dont have enough credit hour")
+        }
+
+        if(creditRemaining > 1) {
+          setCreditRemaining(creditRemaining-item.Credit)
         }
 
         let creditTemp = item.Credit;
@@ -41,9 +45,7 @@ const App = () => {
         setTotalPrice(priceTemp)
 
         setSelectedCourseItem([...selectedCourseItems, item])
-
       }
-    }
   }
 
 
